@@ -5,6 +5,9 @@
 *.swp
 *.swo
 *.swn
+*.aux
+*.log
+*.pdf
 
 # * languages
 src/languages/*/classes_gen
