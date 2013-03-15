@@ -8,6 +8,10 @@
 *.aux
 *.log
 *.pdf
+\#*\#
+*.bbl
+*.blg
+*.dvi
 
 # * languages
 src/languages/*/classes_gen

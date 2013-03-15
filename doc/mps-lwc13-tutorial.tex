@@ -1,6 +1,7 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 
 \usepackage{bera}
+\usepackage{url}
 \setlength{\parindent}{0cm}
 
 \begin{document}
@@ -11,15 +12,52 @@ Eugen Schindler, Martin Palatnik}
 \maketitle
 
 \section{Case introduction}
-link to LWC assignment
-...
+In this tutorial we describe how to build a language to design questionnaires. The name of this language is Questionnaire Language, or QL.
+More details on the requirements of the language can be found here:
+
+\url{http://www.languageworkbenches.net/images/5/53/Ql.pdf}
 
 \section{Getting started}
-install MPS
-install plugins
-...
+Download JetBrains MPS for your platform here:
+\url{http://www.jetbrains.com/mps/download/index.html}
+Note: This tutorial was made using MPS 2.5.
+
+For the advanced editor features we will be adding later during this tutorial, the following plugins are required:
+\begin{description}
+\item[MPS Editor Override] \url{http://github.com/slisson/mps-editor-override}
+\item[MPS Multiline Property Editor Component] \url{http://github.com/slisson/mps-multiline}
+\item[MPS Richtext Editor Component] \url{https://github.com/slisson/mps-richtext}
+\end{description}
+
+Plugins can be installed as follows:
+\begin{enumerate}
+\item Start MPS
+\item Click \textit{File} $\rightarrow$ \textit{Settings \ldots}
+\item Select \textit{Plugins} in the left pane
+\item Click \textit{Install plugin from disk...}
+\item Select a JAR or ZIP file containing the plugin
+\end{enumerate}
 
 \section{Metamodel}
+TODO: INSERT DIAGRAM
+
+TODO: INSERT EXAMPLE QUESTIONNAIRE WITH ANNOTATIONS
+
+Our main questionnaire is a \textbf{Form}. The form contains a single \textbf{Block}. This block in turn contains a set of \textit{FormElement}s. 
+
+We distinguish several types of form elements:
+\begin{description}
+\item[Question] A value provided by a user filling in the questionnaire. Questions are identified by a name and have a type.
+\item[CalculatedValue] A value that is derived (calculated) from other values on the form. Calculated values are identified by name and have a type. Additionally they have an expression that defines how the value should be calculated. This expression references other questions and calculated values.
+\item[Block] A container that can hold other form elements.
+\item[ConditionalBlock] Some parts of the form should only be displayed when certain conditions are met, these parts are under a ConditionalBlock. Conditional blocks have a condition (or 
+\item[FormElement] An ``empty'' form element which serves as a blank spot in the questionnaire. These blanks can be filled in by substituting a ``real'' form element.
+\end{description}
+
+As mentioned before, Questions and calculated values have a \textbf{Type}. This type can be \textbf{Boolean}, \textbf{Integer} or \textbf{String}.
+
+
+
 introduce concepts
 structure definition
 
