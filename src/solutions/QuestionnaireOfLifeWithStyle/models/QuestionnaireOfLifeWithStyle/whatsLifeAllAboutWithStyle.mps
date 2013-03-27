@@ -25,63 +25,42 @@
         <property name="name" nameId="tpck.1169194664001" value="hasSoldHouse" />
         <property name="label" nameId="q3i4.917898825946661686" value="Did you sell a house in 2010?" />
         <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="4395333163361689774" />
-        <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490795">
-          <property name="value" nameId="tpee.1070475926801" value="Did you sell a house in 2010?" />
-        </node>
       </node>
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.FormElement" typeId="q3i4.8643211149799161016" id="947933200581491384" />
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.Question" typeId="q3i4.917898825946650079" id="4395333163361689777">
         <property name="name" nameId="tpck.1169194664001" value="hasBoughtHouse" />
         <property name="label" nameId="q3i4.917898825946661686" value="Did you buy a house in 2010?" />
         <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="4395333163361689779" />
-        <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490796">
-          <property name="value" nameId="tpee.1070475926801" value="Did you buy a house in 2010?" />
-        </node>
       </node>
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.FormElement" typeId="q3i4.8643211149799161016" id="947933200581537104" />
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.Question" typeId="q3i4.917898825946650079" id="4395333163361689781">
         <property name="name" nameId="tpck.1169194664001" value="hasMaintLoan" />
         <property name="label" nameId="q3i4.917898825946661686" value="Did you enter a maintenance loan in 2010?" />
         <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="4395333163361689783" />
-        <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490797">
-          <property name="value" nameId="tpee.1070475926801" value="Did you enter a maintenance loan in 2010?" />
-        </node>
       </node>
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.FormElement" typeId="q3i4.8643211149799161016" id="947933200581537103" />
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.Question" typeId="q3i4.917898825946650079" id="7891420495526438582">
         <property name="name" nameId="tpck.1169194664001" value="houseCost" />
         <property name="label" nameId="q3i4.917898825946661686" value="How much does your house cost?" />
         <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Integer" typeId="q3i4.917898825946790758" id="7290388397545998846" />
-        <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490798">
-          <property name="value" nameId="tpee.1070475926801" value="How much does your house cost?" />
-        </node>
       </node>
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.FormElement" typeId="q3i4.8643211149799161016" id="947933200581537105" />
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.Question" typeId="q3i4.917898825946650079" id="1582178472725747312">
         <property name="name" nameId="tpck.1169194664001" value="carCost" />
         <property name="label" nameId="q3i4.917898825946661686" value="How much does your car cost?" />
         <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Integer" typeId="q3i4.917898825946790758" id="1582178472725747313" />
-        <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490799">
-          <property name="value" nameId="tpee.1070475926801" value="How much does your car cost?" />
-        </node>
       </node>
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.FormElement" typeId="q3i4.8643211149799161016" id="947933200581537106" />
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.Question" typeId="q3i4.917898825946650079" id="7290388397545998852">
         <property name="name" nameId="tpck.1169194664001" value="desiredChanges" />
         <property name="label" nameId="q3i4.917898825946661686" value="What would you like to change about your house?" />
         <node role="type" roleId="q3i4.917898825946661687" type="q3i4.String" typeId="q3i4.917898825946797936" id="7290388397545998854" />
-        <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490800">
-          <property name="value" nameId="tpee.1070475926801" value="What would you like to change about your house?" />
-        </node>
       </node>
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.FormElement" typeId="q3i4.8643211149799161016" id="947933200581537107" />
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.Question" typeId="q3i4.917898825946650079" id="8898037134863034428">
         <property name="name" nameId="tpck.1169194664001" value="desiredChanges2" />
         <property name="label" nameId="q3i4.917898825946661686" value="What else would you like to change about your house?" />
         <node role="type" roleId="q3i4.917898825946661687" type="q3i4.String" typeId="q3i4.917898825946797936" id="8898037134863034429" />
-        <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490801">
-          <property name="value" nameId="tpee.1070475926801" value="What else would you like to change about your house?" />
-        </node>
       </node>
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.FormElement" typeId="q3i4.8643211149799161016" id="947933200581537108" />
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.CalculatedValue" typeId="q3i4.1582178472725744109" id="1582178472725747308">
@@ -170,9 +149,6 @@
             <property name="name" nameId="tpck.1169194664001" value="congratsAllowed" />
             <property name="label" nameId="q3i4.917898825946661686" value="Can I congratulate you with your buy?" />
             <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="2668213510523940879" />
-            <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490802">
-              <property name="value" nameId="tpee.1070475926801" value="Can I congratulate you with your buy?" />
-            </node>
             <node role="helpText" roleId="q3i4.2251561461935389090" type="87nw.Text" typeId="87nw.2557074442922380897" id="2726240646375784309">
               <node role="words" roleId="87nw.2557074442922392302" type="87nw.Word" typeId="87nw.2557074442922438156" id="2726240646375784310">
                 <property name="escapedValue" nameId="87nw.2557074442922438158" value="You indicated in \&quot;" />
@@ -197,9 +173,6 @@
             <property name="name" nameId="tpck.1169194664001" value="likingTheLoan" />
             <property name="label" nameId="q3i4.917898825946661686" value="So you have a house and a loan?" />
             <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="8898037134863157359" />
-            <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490803">
-              <property name="value" nameId="tpee.1070475926801" value="So you have a house and a loan?" />
-            </node>
           </node>
         </node>
         <node role="condition" roleId="q3i4.4395333163361697425" type="tpee.AndExpression" typeId="tpee.1080120340718" id="8898037134863157363">
@@ -218,9 +191,6 @@
             <property name="name" nameId="tpck.1169194664001" value="houseReallyExpensive" />
             <property name="label" nameId="q3i4.917898825946661686" value="Is your house really that expensive?" />
             <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="7290388397546020314" />
-            <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490804">
-              <property name="value" nameId="tpee.1070475926801" value="Is your house really that expensive?" />
-            </node>
           </node>
         </node>
         <node role="condition" roleId="q3i4.4395333163361697425" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="7290388397546020361">
@@ -237,9 +207,6 @@
         <property name="name" nameId="tpck.1169194664001" value="outside" />
         <property name="label" nameId="q3i4.917898825946661686" value="Outside: Check me." />
         <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="8898037134863175117" />
-        <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490805">
-          <property name="value" nameId="tpee.1070475926801" value="Outside: Check me." />
-        </node>
       </node>
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.FormElement" typeId="q3i4.8643211149799161016" id="947933200581492596" />
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.ConditionalBlock" typeId="q3i4.4395333163361697423" id="8898037134863175111">
@@ -251,9 +218,6 @@
             <property name="name" nameId="tpck.1169194664001" value="inside" />
             <property name="label" nameId="q3i4.917898825946661686" value="Inside: Check me." />
             <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="8898037134863175125" />
-            <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490806">
-              <property name="value" nameId="tpee.1070475926801" value="Inside: Check me." />
-            </node>
           </node>
         </node>
       </node>
@@ -267,9 +231,6 @@
             <property name="name" nameId="tpck.1169194664001" value="shouldNotSeeWhenInsideFoldedIn" />
             <property name="label" nameId="q3i4.917898825946661686" value="If Outside unchecked you should not see me." />
             <node role="type" roleId="q3i4.917898825946661687" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="8898037134863175149" />
-            <node role="labelExpr" roleId="q3i4.947933200581472666" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="947933200581490807">
-              <property name="value" nameId="tpee.1070475926801" value="If Outside unchecked you should not see me." />
-            </node>
           </node>
         </node>
       </node>
