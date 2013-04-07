@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:a8720528-9be7-4521-ba15-f1b5f378d56c(QuestionnaireOfLife.whatsLifeAllAbout)">
+<model modelUID="r:5112113d-b2bc-4975-b8e9-a2b0b46426c8(QuestionnaireOfLifeWithStyle.whatsLifeAllAboutWithStyle)">
   <persistence version="7" />
+  <language namespace="2d3f3459-8ac0-4348-bc30-3156adcd1fc0(qls)" />
   <language namespace="91226321-4f88-4441-9d12-6ac6527c0722(ql)" />
+  <language namespace="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
+  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="q3i4" modelUID="r:db49606d-91ef-488e-ab05-ec0c916f7ed3(ql.structure)" version="6" implicit="yes" />
   <import index="87nw" modelUID="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" version="5" implicit="yes" />
+  <import index="2u6g" modelUID="r:f057e858-859b-4354-956f-efbe0e6a9dfa(qls.structure)" version="4" implicit="yes" />
   <roots>
     <node type="q3i4.Form" typeId="q3i4.917898825946661681" id="113961188538979202">
       <property name="name" nameId="tpck.1169194664001" value="HouseOwning" />
+    </node>
+    <node type="2u6g.StyleDefinition" typeId="2u6g.8418675792474610304" id="7394587662563509256">
+      <property name="name" nameId="tpck.1169194664001" value="HouseOwningWithStyle" />
     </node>
   </roots>
   <root id="113961188538979202">
@@ -101,15 +107,6 @@
       <node role="formElements" roleId="q3i4.8643211149799186886" type="q3i4.CalculatedValue" typeId="q3i4.1582178472725744109" id="8898037134863011664">
         <property name="name" nameId="tpck.1169194664001" value="tradedHouse" />
         <property name="label" nameId="q3i4.1582178472725744113" value="You traded a house" />
-        <node role="type" roleId="q3i4.1582178472725744121" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="8898037134863011667" />
-        <node role="expression" roleId="q3i4.1582178472725744110" type="tpee.AndExpression" typeId="tpee.1080120340718" id="8898037134863011681">
-          <node role="rightExpression" roleId="tpee.1081773367579" type="q3i4.QuestionReference" typeId="q3i4.1785499535625990009" id="8898037134863011684">
-            <link role="question" roleId="q3i4.1785499535625990011" targetNodeId="4395333163361689777" resolveInfo="hasBoughtHouse" />
-          </node>
-          <node role="leftExpression" roleId="tpee.1081773367580" type="q3i4.QuestionReference" typeId="q3i4.1785499535625990009" id="8898037134863011668">
-            <link role="question" roleId="q3i4.1785499535625990011" targetNodeId="4395333163361689772" resolveInfo="hasSoldHouse" />
-          </node>
-        </node>
         <node role="labelExpr" roleId="q3i4.947933200581537421" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="3495208597724682210">
           <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3495208597724682213">
             <property name="value" nameId="tpee.1070475926801" value=" trade a house." />
@@ -129,6 +126,15 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node role="type" roleId="q3i4.1582178472725744121" type="q3i4.Boolean" typeId="q3i4.113961188538979205" id="8898037134863011667" />
+        <node role="expression" roleId="q3i4.1582178472725744110" type="tpee.AndExpression" typeId="tpee.1080120340718" id="8898037134863011681">
+          <node role="rightExpression" roleId="tpee.1081773367579" type="q3i4.QuestionReference" typeId="q3i4.1785499535625990009" id="8898037134863011684">
+            <link role="question" roleId="q3i4.1785499535625990011" targetNodeId="4395333163361689777" resolveInfo="hasBoughtHouse" />
+          </node>
+          <node role="leftExpression" roleId="tpee.1081773367580" type="q3i4.QuestionReference" typeId="q3i4.1785499535625990009" id="8898037134863011668">
+            <link role="question" roleId="q3i4.1785499535625990011" targetNodeId="4395333163361689772" resolveInfo="hasSoldHouse" />
           </node>
         </node>
       </node>
@@ -268,6 +274,48 @@
         </node>
       </node>
     </node>
+  </root>
+  <root id="7394587662563509256">
+    <node role="rules" roleId="2u6g.8418675792474650541" type="2u6g.StylingRule" typeId="2u6g.8418675792474650530" id="6182267496222693271" />
+    <node role="rules" roleId="2u6g.8418675792474650541" type="2u6g.QuestionRule" typeId="2u6g.8418675792474650535" id="7394587662563509257">
+      <node role="questionReference" roleId="2u6g.8418675792474863824" type="2u6g.QuestionReference" typeId="2u6g.8418675792474863223" id="7394587662563509259">
+        <link role="question" roleId="2u6g.8418675792474863279" targetNodeId="4395333163361689777" resolveInfo="hasBoughtHouse" />
+      </node>
+      <node role="stylingRuleStatements" roleId="2u6g.5310625304505888034" type="2u6g.WidgetStatement" typeId="2u6g.5310625304505895066" id="7394587662563509260">
+        <node role="widget" roleId="2u6g.5310625304505895068" type="2u6g.RadioButton" typeId="2u6g.5310625304505873667" id="7394587662563528334" />
+      </node>
+      <node role="stylingRuleStatements" roleId="2u6g.5310625304505888034" type="2u6g.BackgroundColorStatement" typeId="2u6g.7394587662563561008" id="7394587662563594594">
+        <property name="color" nameId="2u6g.7394587662563563194" value="blue" />
+      </node>
+    </node>
+    <node role="rules" roleId="2u6g.8418675792474650541" type="2u6g.QuestionRule" typeId="2u6g.8418675792474650535" id="7394587662563509265">
+      <node role="questionReference" roleId="2u6g.8418675792474863824" type="2u6g.QuestionReference" typeId="2u6g.8418675792474863223" id="7394587662563509267">
+        <link role="question" roleId="2u6g.8418675792474863279" targetNodeId="1582178472725747312" resolveInfo="carCost" />
+      </node>
+      <node role="stylingRuleStatements" roleId="2u6g.5310625304505888034" type="2u6g.WidgetStatement" typeId="2u6g.5310625304505895066" id="7394587662563509268">
+        <node role="widget" roleId="2u6g.5310625304505895068" type="2u6g.Range" typeId="2u6g.7394587662563428930" id="7394587662563509270" />
+      </node>
+      <node role="stylingRuleStatements" roleId="2u6g.5310625304505888034" type="2u6g.BackgroundColorStatement" typeId="2u6g.7394587662563561008" id="7394587662563594596">
+        <property name="color" nameId="2u6g.7394587662563563194" value="cyan" />
+      </node>
+    </node>
+    <node role="rules" roleId="2u6g.8418675792474650541" type="2u6g.QuestionRule" typeId="2u6g.8418675792474650535" id="4133767426328535311">
+      <node role="questionReference" roleId="2u6g.8418675792474863824" type="2u6g.QuestionReference" typeId="2u6g.8418675792474863223" id="4133767426328535313">
+        <link role="question" roleId="2u6g.8418675792474863279" targetNodeId="4395333163361689781" resolveInfo="hasMaintLoan" />
+      </node>
+      <node role="stylingRuleStatements" roleId="2u6g.5310625304505888034" type="2u6g.WidgetStatement" typeId="2u6g.5310625304505895066" id="4133767426328535317">
+        <node role="widget" roleId="2u6g.5310625304505895068" type="2u6g.RadioButton" typeId="2u6g.5310625304505873667" id="4133767426328535319" />
+      </node>
+    </node>
+    <node role="rules" roleId="2u6g.8418675792474650541" type="2u6g.StylingRule" typeId="2u6g.8418675792474650530" id="6182267496222741918" />
+    <node role="rules" roleId="2u6g.8418675792474650541" type="2u6g.QuestionRule" typeId="2u6g.8418675792474650535" id="6182267496222741920">
+      <node role="questionReference" roleId="2u6g.8418675792474863824" type="2u6g.QuestionReference" typeId="2u6g.8418675792474863223" id="6182267496222741922">
+        <link role="question" roleId="2u6g.8418675792474863279" targetNodeId="7290388397545998852" resolveInfo="desiredChanges" />
+      </node>
+    </node>
+    <node role="rules" roleId="2u6g.8418675792474650541" type="2u6g.StylingRule" typeId="2u6g.8418675792474650530" id="6182267496222711601" />
+    <node role="rules" roleId="2u6g.8418675792474650541" type="2u6g.StylingRule" typeId="2u6g.8418675792474650530" id="6182267496222584457" />
+    <node role="rules" roleId="2u6g.8418675792474650541" type="2u6g.StylingRule" typeId="2u6g.8418675792474650530" id="6182267496222584458" />
   </root>
 </model>
 
